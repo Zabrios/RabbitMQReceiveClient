@@ -56,16 +56,6 @@ namespace Receive
                 Console.WriteLine("Alumno name and age: {0} {1}, {2}", alumno.Nombre, alumno.Apellidos, alumno.Edad);
                 model.BasicAck(deliveryArguments.DeliveryTag, false);
 
-                //var consumer2 = new EventingBasicConsumer(channel);
-                //consumer.Received += (model, ea) =>
-                //{
-                //    var body = ea.Body;
-                //    var message = Encoding.UTF8.GetString(body);
-                //    Console.WriteLine(" [x] Received {0}", message);
-                //};
-                //channel.BasicConsume(queue: "hello",
-                //                     autoAck: true,
-                //                     consumer: consumer);
             }
         }
     }
